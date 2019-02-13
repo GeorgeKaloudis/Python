@@ -16,7 +16,7 @@ for i in range (0,25):
             t2=alph[j]
             alph[j]=alph[j-1]
             alph[j-1]=t2
-#In case of more than 1 max and min take only one max and min
+#In case of more than 1 max and min take only one max and one min
 max=alph[0] 
 for i in range(25,0,-1):
     if stats[i]>0:
