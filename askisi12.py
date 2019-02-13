@@ -16,13 +16,13 @@ for i in range (0,25):
             t2=alph[j]
             alph[j]=alph[j-1]
             alph[j-1]=t2
-
-max=alph[0]
+#In case of more than 1 max and min take only one max and min
+max=alph[0] 
 for i in range(25,0,-1):
     if stats[i]>0:
         min=alph[i]
         break
-print max,min
+print max,min 
 f=open(file,"r+")
 data=f.read()
 data=data.replace(max,min.upper())
